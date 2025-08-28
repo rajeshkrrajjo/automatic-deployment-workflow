@@ -22,7 +22,7 @@ runs:
         if [[ "$BRANCH_NAME" == "main" || "$BRANCH_NAME" == "refs/heads/main" ]]; then
           echo "enviroment=production" >> $GITHUB_OUTPUT
         elif [[ "$BRANCH_NAME" == "development" || "$BRANCH_NAME" == "refs/heads/development" ]]; then
-          echo "enviroment=staging" >> $GITHUB_OUTPUT
+          echo "enviroment=development" >> $GITHUB_OUTPUT
         else 
           echo "Unknown branch name: $BRANCH_NAME"
           exit 1
