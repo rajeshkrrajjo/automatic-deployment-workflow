@@ -2,6 +2,10 @@ name: 'Deploy Infrastructure & Application'
 
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        default: SAIA
   push:
     branches:
       - main
