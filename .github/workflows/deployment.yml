@@ -145,11 +145,11 @@ jobs:
               body: body
           })
 
-  terraform-apply:
+  terraform-apply: 
     name: 'Terraform Apply'
     if: |
       (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/development') && 
-      needs.terraform-plan.outputs.tfplanExitCode == '2'
+      needs.terraform-plan.outputs.tfplanExitCode == '0'
     runs-on: ubuntu-latest
     needs: [terraform-plan, set-enviroment]
     environment: 
