@@ -1,2 +1,2 @@
-resource_group_name = "automate-rg1"
+resource_group_name = "automate-rg01"
 location            = "westeurope"
