@@ -55,7 +55,6 @@ resource "azurerm_service_plan" "service_plan" {
 
   tags = {
     environment = var.environment
-    owner = "rajesh"
   }
 }
 
